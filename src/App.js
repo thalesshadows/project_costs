@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes,  Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,  Route } from 'react-router-dom';
 import Home from './Components/Pages/Home.js';
 import Company from './Components/Pages/Company.js';
 import Contact from './Components/Pages/Contact.js';
@@ -8,6 +8,7 @@ import Container from './Components/Layout/Container.js';
 import Navbar from './Components/Layout/Navbar.js';
 import Footer from './Components/Layout/Footer.js';
 import Projects from './Components/Layout/Projects.js';
+import Project from './Components/Pages/Project.js';
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/newproject" element={<NewProject />} />
             <Route exact  path="/projects" element={<Projects />} />
+            <Route exact path="/project/:id" element={<Project />} />
           
       </Routes>
       </Container>
